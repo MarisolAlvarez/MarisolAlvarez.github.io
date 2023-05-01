@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(253, 253, 253);
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navegacion*/
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display:flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntitos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer
+
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgb(21,21,21)
+}
+
+/*Icono de menú*/
+nav .nav-right-section.menu{
+    background-image: url(https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.perfil{
+    border-radius: 300px;
+    margin-left: 100px;
+}
+
+/*Main*/
+main{
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e3e3e3;
+    /*Footer dividido en dos columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
